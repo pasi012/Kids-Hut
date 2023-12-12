@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.SinhalaFragment">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/sliderViewSinhala"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:background="@drawable/pasas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderIndicatorSelectedColor="#FFFFFF"
+                app:sliderIndicatorUnselectedColor="#353232"
+                app:sliderScrollTimeInSec="5"
+                app:sliderStartAutoCycle="true"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorPadding="4dp"
+                app:sliderIndicatorRadius="1.5dp"
+                app:sliderAnimationDuration="1000"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorGravity="center_horizontal|bottom"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/kaa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sliderViewSinhala">
+
+            <TextView
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#640F73"
+                android:id="@+id/textView5"
+                android:padding="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="සිංහල"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar1"
+                android:max="3"
+                android:progress="@integer/google_play_services_version"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/sinhala_animation_story"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="❤❤❤ කතන්දර ❤❤❤ කතන්දර ❤❤❤ කතන්දර ❤❤❤"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:paddingStart="100dp"
+                android:paddingEnd="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cons2">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSinhalaAnimationStories"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sinhala_animation_story"/>
+
+            <TextView
+                android:id="@+id/sinhala_animation_movie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="❤❤❤ චිත්‍රපට ❤❤❤ චිත්‍රපට ❤❤❤ චිත්‍රපට ❤❤❤"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:paddingStart="100dp"
+                android:paddingEnd="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSinhalaAnimationStories">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSinhalaAnimationMovies"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sinhala_animation_movie"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

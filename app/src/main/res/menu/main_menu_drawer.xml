@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/aboutus"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/faq1"
+            android:title="FAQ" />
+
+        <item
+            android:id="@+id/nav_t_c"
+            android:icon="@drawable/termsandconditions"
+            android:title="Terms and Condition"/>
+
+    </group>
+
+
+
+        <item
+            android:title="Profile">
+
+            <menu>
+
+                <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Log Out" />
+
+                </group>
+
+            </menu>
+
+        </item>
+
+
+
+        <item
+            android:title="Communicate">
+
+            <menu>
+
+                <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share App" />
+
+                <item
+                    android:id="@+id/nav_rateus"
+                    android:icon="@drawable/ic_rateus"
+                    android:title="Rate Us"/>
+
+                <item
+                    android:id="@+id/nav_contactus"
+                    android:icon="@drawable/ic_contact_support"
+                    android:title="Contact Us"/>
+
+                </group>
+
+            </menu>
+
+        </item>
+
+</menu>

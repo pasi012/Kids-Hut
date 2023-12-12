@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "799193225894",
+    "project_id": "kids-hut-6b2ed",
+    "storage_bucket": "kids-hut-6b2ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799193225894:android:60b458651f72f1f864b267",
+        "android_client_info": {
+          "package_name": "inc.sltechnology.kidshut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799193225894-b1pja50ln51o3m3o54lv7fgi9te12044.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANG3Z7FgD-5XcyP-9BLAVNiOyla-SdTDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799193225894-b1pja50ln51o3m3o54lv7fgi9te12044.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

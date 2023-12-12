@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchBarActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSearch"
+        android:background="@drawable/i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewForSearchCS"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchCM"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchCS"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchES"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchCM"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchEM"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchES"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchHS"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchEM"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchHM"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchHS"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchJS"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchHM"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchJM"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchJS"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchSS"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchJM"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchSM"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchSS"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchTS"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchSM"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewForSearchTM"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewForSearchTS"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

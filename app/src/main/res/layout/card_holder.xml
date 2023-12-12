@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp">
+
+        <LinearLayout
+            android:background="@drawable/c"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:textAlignment="center"
+            android:id="@+id/thumbForSearch"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            app:srcCompat="@drawable/pasi"/>
+
+        <TextView
+            android:id="@+id/titleForSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
